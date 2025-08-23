@@ -1,50 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shadow & Light</title>
+<!-- saved from url=(0160)file:///C:/Users/felix/AppData/Local/Temp/e797a497-2619-4116-a4d7-b85aba1cc1f5_Shadow.github.io-Shadow-Light.tar.gz.1f5/Shadow.github.io-Shadow-Light/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shadows.Life — Shadow &amp; Light</title>
+  <meta name="description" content="A personal manifesto about Shadow &amp; Light.">
+  <meta property="og:title" content="Shadows.Life — Shadow &amp; Light">
+  <meta property="og:description" content="The shadow grows stronger with every ray of light.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0d0d">
   <style>
+    :root {
+      --bg: #0b0b0c;
+      --card: #131316;
+      --text: #e8e8ec;
+      --muted: #b8b8bf;
+      --accent: #ffffff;
+      --accent2: #6b6bf6;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
     body {
-      background-color: #0d0d0d;
-      color: #eaeaea;
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 50% -10%, rgba(107,107,246,.15), transparent 60%), var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+    .card {
+      width: 100%;
+      max-width: 780px;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+    header {
       display: flex;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-      line-height: 1.6;
+      justify-content: flex-start;
+      gap: 12px;
+      margin-bottom: 10px;
     }
-    .container {
-      max-width: 600px;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: .6px;
+    }
+    .dot {
+      width: 14px; height: 14px; border-radius: 999px;
+      background: radial-gradient(9px 9px at 40% 40%, #fff, #9aa0ff 60%, #5052c8 100%);
+      box-shadow: 0 0 35px rgba(107,107,246,.8), 0 0 10px rgba(255,255,255,.6) inset;
     }
     h1 {
-      font-size: 2em;
-      margin-bottom: 1em;
+      font-size: clamp(28px, 4vw, 40px);
+      margin: 8px 0 8px;
+      line-height: 1.15;
+      letter-spacing: .3px;
+    }
+    .sub {
+      color: var(--muted);
+      margin: 0 0 18px;
+      font-size: 14px;
+      letter-spacing: .2px;
+    }
+    .poem {
+      margin: 20px 0 26px;
+      line-height: 1.8;
+      font-size: clamp(16px, 2.1vw, 18px);
+      white-space: pre-line;
+    }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.02));
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,.35);
+    }
+    .btn:hover { transform: translateY(-1px); border-color: rgba(255,255,255,.28); }
+    .btn:active { transform: translateY(0); }
+    .ghost {
+      background: transparent;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .shadowline {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent);
+      margin: 14px 0 18px;
+      opacity: .5;
+    }
+    @media (max-width: 480px) {
+      .btns { gap: 8px; }
+      .btn { width: 100%; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Shadow & Light</h1>
-    <p>
-      Shadow is a dark version of us. "A Second US". No?<br><br>
-      NO, Shadow.<br><br>
-      Shadow is a strong part of us, a part who will be every time with us.<br>
-      He will lead us the way. The way to be safe.<br>
-      But Shadow cannot follow you without the "Light".<br><br>
-      So, when you have found your light never let the light go out.<br>
-      Treat the light like it’s the only way you can survive.<br><br>
-      The body is only a "physical form" of oneself.<br>
-      The shadow is the true self.<br><br>
-      The shadow grows stronger with every ray of light.<br>
-      And when the shadow is most visible,<br>
-      then you have found your light, your hope, your path,<br>
-      your other half without whom it would not work.
-    </p>
-  </div>
-</body>
-</html>
+  <main class="card">
+    <header>
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Shadows.Life</span>
+      </div>
+    </header>
+
+    <h1>Shadow &amp; Light</h1>
+    <p class="sub">The shadow grows stronger with every ray of light.</p>
+
+    <div class="poem" aria-label="Manifesto">
+Shadow is a dark version of us. "A Second US". No?
+NO, Shadow.
+
+Shadow is a strong part of us, a part who will be every time with us.
+He will lead us the way. The way to be safe.
+But Shadow cannot follow you without the "Light".
+
+So, when you have found your light never let the light go out.
+Treat the light like it’s the only way you can survive.
+
+The body is only a "physical form" of oneself.
+The shadow is the true self.
+
+The shadow grows stronger with every ray of light.
+And when the shadow is most visible,
+then you have found your light, your hope, your path,
+your other half without whom it would not work.
+    </div>
+
+    <div class="shadowline"></div>
+
+    <div class="btns">
+      <!-- Primary link (you can change the href) -->
+      <a class="btn" href="https://shadows.life/" target="_blank" rel="noopener">Visit Shadows.Life</a>
+      <!-- Secondary link (placeholder you can edit) -->
+      <a class="btn ghost" href="mailto:contact@shadows.life">Contact</a>
+    </div>
+
+    <footer>
+      <span>© Shadows.Life</span>
+      <span>NoeAmora</span>
+    </footer>
+  </main>
+
+
+</body></html>
